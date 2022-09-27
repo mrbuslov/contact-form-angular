@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="contact_body">
+        <div class="container">
+            <h1 class="contact_h1">Contact me</h1>
+            <h3 class="contact_h3">We are always happy to find out what's on your mind</h3>
+    
+            <form id="ngForm" name="ngForm">
+                <div class="contact_field">
+                    <input type="text" name="name" class="contact_input" required>
+                    <label class="contact_input_label">Name</label>
+                    <!-- <div class="contact_field_error" *ngIf="nameInput.invalid && nameInput.touched">Your Name is required.</div> -->
+                </div>
+                
+                <div class="contact_field">
+                    <input type="email" name="email" class="contact_input" required>
+                    <!-- <div class="contact_field_error" *ngIf="emailInput.invalid && emailInput.touched">Your Email is required.</div> -->
+                    <label class="contact_input_label">Email</label>
+                </div>
+                
+                <div class="contact_field">
+                    <!-- <label class="contact_input_label">Your message</label> -->
+                    <textarea name="message" class="contact_input" placeholder="Write something we just must know about..." required></textarea>
+                    <!-- <div class="contact_field_error" *ngIf="messageInput.invalid && messageInput.touched">Field message is required.</div> -->
+                </div>
+    
+                <input type="submit" value="Send" class="contact_submit_button" id="contact_submit_button" disabled>
+            </form>
+        </div>
+    </div>
+
+</body>
+    <script src="script.js"></script>
+</html>

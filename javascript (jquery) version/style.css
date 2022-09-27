@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(comfortaa.ttf) format("opentype");
+}
+*{
+    font-family: 'Comfortaa' !important;
+}
+body{
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact_body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.container{
+    text-align: center;
+    padding: 40px 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(46, 128, 228, 0.8) 35%, rgba(129, 182, 248, 0.8) 100%);
+}
+
+.contact_h1, .contact_h3{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.contact_h3{
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.contact_field{
+    width: 100%;
+    text-align: left;
+	position: relative;
+}
+
+
+
+.contact_field input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+}
+.contact_field label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none; /* нельзя выделить мышью*/
+	transition: 0.5s;
+}
+.contact_field input:focus~label,
+.contact_field input:valid~label{
+	top: -18px;
+	left: 0;
+	color: #000;
+	font-size: 12px;
+}
+
+
+.contact_field textarea{
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 120px;
+    outline: none;
+}
+
+
+.invalid_input{
+    border-bottom: 1px solid red !important;
+}
+
+
+.contact_submit_button{
+    width: 250px;
+    color: #fff;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    cursor: auto;
+    background: rgba(123 128 253, .7) !important;
+    color: rgba(red, green, blue, .7) !important;
+
+    transition: background .2s ease;
+}
+
+
+.able_submit{
+    background: rgb(123, 128, 253);
+    cursor: pointer;
+}
+
+
+
+
+/* @keyframes button_bump {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.04);
+        -webkit-transform: scale(1.04);
+    }
+}
+
+.contact_submit_button {
+    animation: button_bump ease-in-out infinite alternate;
+    -webkit-animation: button_bump ease-in-out infinite alternate;
+    animation-duration: .5s;
+} */
