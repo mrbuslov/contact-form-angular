@@ -1,6 +1,12 @@
 # contact-form-angular
 Contact Form in 2 ways: Anguar and JS (jQuery)
 
+# Results
+![image](https://user-images.githubusercontent.com/68155915/192437400-681de4b8-b61e-4c06-b223-250bc06ab067.jpg)
+
+![image 2](https://user-images.githubusercontent.com/68155915/192437435-eb5b3ec6-04aa-46a5-82aa-84f79f369237.jpg)
+
+
 # Task
 Preparation of the contact form
 ● the basis of the form is a simple landing page with a white background
